@@ -1,15 +1,15 @@
 import streamlit as st
 import pickle
 import string
+import re
 import os
 import nltk
 from nltk.corpus import stopwords
 from nltk.stem.porter import PorterStemmer
 
-# Set up NLTK data directory for cloud compatibility
+# Download stopwords to a safe directory
 nltk_data_dir = os.path.join(os.getcwd(), 'nltk_data')
 os.makedirs(nltk_data_dir, exist_ok=True)
-nltk.download('punkt', download_dir=nltk_data_dir)
 nltk.download('stopwords', download_dir=nltk_data_dir)
 nltk.data.path.append(nltk_data_dir)
 
@@ -17,7 +17,7 @@ ps = PorterStemmer()
 
 def transform_text(text):
     text = text.lower()
-    text = nltk.word_tokenize(text)
+    text = re.findall(r'\b\w+\b', text) 
 
     y = []
     for i in text:
