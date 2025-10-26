@@ -1,7 +1,9 @@
-📩 SMS Spam Classification
+## 📩 SMS Spam Classification
+
 This project uses machine learning to classify SMS messages as spam or ham (not spam). It demonstrates text preprocessing, feature extraction, and model training using Python and scikit-learn.
 
-🔍 Features
+## 🔍 Features
+
 - Clean and preprocess SMS text data
 
 - Convert text to numerical features using TF-IDF
@@ -12,7 +14,8 @@ This project uses machine learning to classify SMS messages as spam or ham (not 
 
 - Streamlit interface for interactive use
 
-🛠️ Tech Stack
+## 🛠️ Tech Stack
+
 - Python
 
 - Pandas, NumPy
@@ -25,23 +28,23 @@ This project uses machine learning to classify SMS messages as spam or ham (not 
 
 - Streamlit 
 
-🚀 Getting Started
+## 🚀 Getting Started
 
-Clone the repository
+- Clone the repository
 
 git clone https://github.com/Abhay109z/sms-spam-classification.git
 cd sms-spam-classification
 
-Install dependencies
+- Install dependencies
 
 pip install -r requirements.txt
 
-Run the Streamlit app
+- Run the Streamlit app
 
 streamlit run streamlit_app.py
 
-📁 Dataset
+## 📁 Dataset
 The dataset used is SMSSpamCollection, which contains labeled SMS messages. It is loaded and processed within the notebook.
 
-📊 Model
+## 📊 Model
 The project uses a Naive Bayes classifier and evaluates performance using accuracy, precision, recall, and confusion matrix.
